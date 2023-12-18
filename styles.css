@@ -121,6 +121,10 @@ strong:hover {
   background-color: hsl(211, 68%, 94%);
 }
 
+.chess-icon {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     margin: 0;

@@ -16,6 +16,6 @@ markAllAsRead.addEventListener("click", () => {
   unReadMessages.forEach((m) => {
     m.classList.remove("unread");
   });
-  const newUnReadMessages = document.querySelector(".unread");
+  const newUnReadMessages = document.querySelectorAll(".unread");
   unread.innerText = newUnReadMessages.length;
 });

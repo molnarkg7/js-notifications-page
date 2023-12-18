@@ -1,0 +1,128 @@
+@import url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(210, 60%, 98%);
+}
+
+.container {
+  margin: 2rem;
+  width: 700px;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.notification-box {
+  display: flex;
+  align-items: center;
+}
+
+.notifications {
+  background-color: hsl(219, 85%, 26%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+
+.all_read {
+  cursor: pointer;
+}
+
+.all_read:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+img {
+  width: 50px;
+}
+
+.description {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+strong {
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+}
+
+strong:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.unread p:first-of-type::after {
+  content: "";
+  background-color: hsl(1, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.message-card {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  margin-left: 5rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(205, 33%, 90%);
+}
+
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+}

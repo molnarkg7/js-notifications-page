@@ -1,8 +1,8 @@
-# Frontend Mentor - Interactive card details form solution
+# Frontend Mentor - Notifications page solution
 
 ## Live Site URL:
 
--
+- https://molnarkg7.github.io/js-notifications-page/
 
 ## Build With
 
